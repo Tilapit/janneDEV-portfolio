@@ -44,7 +44,7 @@ const projects: Project[] = [
     name: "Växthuset",
     role: "Office attendance app · 2026 — present",
     stack: ["Next.js", "TypeScript", "Power Automate", "MS Teams", "SharePoint"],
-    href: "https://vaxthuset-app.vercel.app",
+    href: "https://vaxthuset-app-git-portfolio-demo-tilapits-projects.vercel.app",
     body: (
       <>
         <p>
