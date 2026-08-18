@@ -1,6 +1,6 @@
 const stats = [
-  { num: "2×", label: "Hackathon Top 3" },
-  { num: "€50K+", label: "Budget under oversight" },
+  { num: "2×", label: "Hackathon finalist" },
+  { num: "€60K+", label: "Budget under oversight" },
   { num: "3", label: "Working languages" },
 ];
 

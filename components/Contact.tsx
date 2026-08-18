@@ -33,7 +33,7 @@ export default function Contact() {
             </h2>
             <p className="contact-sub reveal d2">
               Open to internships, projects, and conversations at the
-              intersection of business, engineering, and law. Easiest to reach
+              intersection of business, product, and AI. Easiest to reach
               by email — replies usually arrive the same day.
             </p>
           </div>

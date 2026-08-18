@@ -25,16 +25,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Janne Lappi — Portfolio",
+  title: "Janne Lappi — Business student & AI builder",
   description:
-    "Janne Lappi · Applied AI Trainee at Fondia. Business & Economics student building Folio, Myötä, and Växthuset. Helsinki, Finland.",
+    "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
   metadataBase: new URL("https://jannelappi.com"),
   openGraph: {
-    title: "Janne Lappi — Portfolio",
+    title: "Janne Lappi — Business student & AI builder",
     description:
-      "Software, businesses, and the bridges between them. Selected work, path, and contact.",
+      "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
     type: "website",
     locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Janne Lappi — Business student & AI builder",
+    description:
+      "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
   },
   icons: {
     icon: "/favicon.ico",

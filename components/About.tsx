@@ -9,24 +9,30 @@ export default function About() {
         <div className="about-grid">
           <div className="about-body reveal d2">
             <p>
-              The shortest version: I look for places where AI can replace a
-              tedious evening of work with a Tuesday-morning tool.
+              A year ago I thought I would probably end up in banking or
+              consulting. During my first year in Vaasa, I joined a
+              hackathon mostly out of curiosity. Our team finished second,
+              and what stuck with me was how much we were able to build with
+              AI despite not having particularly strong coding backgrounds.
+              That got me interested in using these tools more seriously.
             </p>
             <p>
-              <strong>Folio</strong> came from being VES&apos;s treasurer and
-              watching invoices pile up in Gmail. <strong>Växthuset</strong>{" "}
-              came from a Teams thread at Fondia where nobody could keep track
-              of who was coming to the Stockholm office. <strong>Myötä</strong>{" "}
-              came from realising people pick their therapist by scrolling a
-              list, which works about as well as you&apos;d expect.
+              My background is still more business than software. I now
+              study Information and Service Management at{" "}
+              <strong>Aalto</strong> and work as <strong>Head of Finance</strong>{" "}
+              at <strong>VES</strong>, but over the past year I&apos;ve spent
+              more and more time building things with Claude Code and Codex.
+              Most of what I know technically I&apos;ve picked up along the
+              way because a project required it.
             </p>
             <p>
-              Same instinct each time —{" "}
-              <em>small problem, real users, ship before it&apos;s polished</em>.
-              I learned that the slow way: a year as a reconnaissance group
-              leader in the army before this, and co-founding a vintage
-              clothing shop in upper secondary school before that.
-              Surprisingly transferable.
+              Those projects include <strong>LinkdPhoto</strong> (an AI
+              headshot service), <strong>Myötä</strong> (a therapist
+              matching platform we built through VES), and more recently
+              work on <strong>Heltti&apos;s</strong> therapy services and
+              websites. Last summer I also worked at <strong>Fondia</strong>{" "}
+              in Stockholm as an Applied AI Trainee, where I got to use the
+              same tools on internal business problems.
             </p>
           </div>
         </div>

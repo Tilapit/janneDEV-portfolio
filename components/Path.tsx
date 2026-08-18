@@ -18,37 +18,55 @@ const groups: YearGroup[] = [
     year: "2026",
     events: [
       {
-        date: "Since 05/2026",
-        title: <>Applied AI Trainee</>,
-        sub: <>Fondia — Stockholm / Remote</>,
+        date: "Since 09/2026",
+        title: <>Founders House Crew</>,
+        sub: <>Helsinki — volunteer</>,
+        body: <>Helping organise startup events.</>,
+      },
+      {
+        date: "Since 08/2026",
+        title: <>Aalto University</>,
+        sub: <>School of Business — Information and Service Management</>,
         body: (
           <>
-            Building internal tools that make day-to-day work better. Currently
-            shipping <em>Växthuset</em>, an office attendance app for the
-            Stockholm team.
+            Core studies in information and service management, with a
+            minor in Computer Science.
+          </>
+        ),
+      },
+      {
+        date: "05/2026 – 08/2026",
+        title: <>Applied AI Trainee</>,
+        sub: <>Fondia — Stockholm</>,
+        body: (
+          <>
+            Built internal tools that made day-to-day work better,
+            including Power Automate workflows, a compliance
+            self-assessment tool, and a contract &amp; cost tracking
+            system.
           </>
         ),
       },
       {
         date: "12 March",
-        title: <>Greenstep CFO Hackathon</>,
+        title: <>Greenstep Finance Hackathon</>,
         sub: <>Helsinki · 24-hour finance &amp; analytics challenge</>,
         body: (
           <>
-            Built a predictive analytics dashboard for Stockmann that forecasts
-            visitor numbers from upcoming events and recommends staffing
-            adjustments.
+            Went solo, joined a Stockmann team on-site. Built visitor
+            forecasting using weather and event data for staffing
+            planning.
           </>
         ),
-        badge: "🥉 Top 3 of 47",
+        badge: "🥉 3rd place / 47 teams",
       },
       {
         date: "Since 01/2026",
-        title: <>Treasurer</>,
+        title: <>Head of Finance</>,
         sub: <>VES — Vaasa Entrepreneurship Society</>,
         body: (
           <>
-            €50K+ budget oversight. Day-to-day finance, reimbursements, and
+            ~€60k budget oversight. Day-to-day finance, reimbursements, and
             reporting for the society.
           </>
         ),
@@ -68,16 +86,16 @@ const groups: YearGroup[] = [
             industrial problem-solving.
           </>
         ),
-        badge: "🥉 Top 3 of 27",
+        badge: "🥈 2nd place / 27 teams",
       },
       {
-        date: "Since 08/2025",
+        date: "08/2025 – 08/2026",
         title: <>University of Vaasa</>,
-        sub: <>School of Business and Economics</>,
+        sub: <>School of Business and Economics — previous</>,
         body: (
           <>
-            Core studies in business, economics, and finance. Applied to
-            transfer to Aalto.
+            Core studies in business, economics, and finance, before
+            transferring to Aalto.
           </>
         ),
       },

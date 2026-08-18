@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Work from "@/components/Work";
+import Experiments from "@/components/Experiments";
 import Path from "@/components/Path";
 import OffDuty from "@/components/OffDuty";
 import Contact from "@/components/Contact";
@@ -18,6 +19,7 @@ export default function Page() {
         <Stats />
         <About />
         <Work />
+        <Experiments />
         <Path />
         <OffDuty />
         <Contact />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 type Project = {
@@ -8,16 +9,39 @@ type Project = {
   body: ReactNode;
   href?: string;
   button?: string;
+  image?: string;
 };
 
 const projects: Project[] = [
   {
-    meta: "01 / Co-founded",
+    meta: "01 / LinkdPhoto",
+    name: "LinkdPhoto",
+    role: "AI LinkedIn headshots · 2026 — present",
+    stack: ["Next.js", "Supabase", "Stripe", "Gemini API"],
+    href: "https://linkdphoto.com",
+    button: "Visit site ↗",
+    body: (
+      <>
+        <p>
+          An AI-powered headshot service — upload a few casual photos, get
+          back professional <strong>LinkedIn-ready headshots</strong> in
+          minutes. Full production product: Supabase for auth and data,
+          Stripe for payments, Gemini API for image generation,
+          transactional email flows, and a credit-based freemium model.
+        </p>
+        <p>
+          <strong>€2.99</strong> for a single headshot, <strong>€4.99</strong>{" "}
+          for a bundle. EU-hosted and GDPR-compliant. Built solo with{" "}
+          <strong>Claude Code</strong>, and already has paying customers.
+        </p>
+      </>
+    ),
+  },
+  {
+    meta: "02 / Myötä",
     name: "Myötä",
     role: "Therapist matching · 2025 — currently paused",
-    stack: ["Next.js", "Supabase", "OpenAI API", "TypeScript"],
-    href: "https://www.myota.app/fi",
-    button: "Visit Myötä ↗",
+    stack: ["Next.js", "Supabase", "Claude API", "TypeScript"],
     body: (
       <>
         <p>
@@ -26,64 +50,59 @@ const projects: Project[] = [
           one that fits — months lost, money spent, motivation drained.
         </p>
         <p>
-          Myötä replaces directory-style search with a{" "}
-          <em>5–10 minute guided quiz</em> that returns three explained
-          recommendations — and a direct booking.{" "}
-          <strong>10 therapists currently onboarded</strong>, demoed at
-          Startup Window.
+          Built through VES&apos;s Startup Window event, then continued
+          after it ended. Myötä replaces directory-style search with a
+          guided quiz that scores fit and returns matched, explained
+          recommendations. <strong>10 therapists onboarded</strong> so far.
         </p>
         <p>
-          <em>Currently paused</em> while I focus on other commitments —
-          picking it back up when I have the time it deserves.
-        </p>
-      </>
-    ),
-  },
-  {
-    meta: "02 / Shipping at Fondia",
-    name: "Växthuset",
-    role: "Office attendance app · 2026 — present",
-    stack: ["Next.js", "TypeScript", "Power Automate", "MS Teams", "SharePoint"],
-    href: "https://vaxthuset-app-git-portfolio-demo-tilapits-projects.vercel.app",
-    body: (
-      <>
-        <p>
-          A Teams app that makes office attendance feel motivating instead of
-          surveillance-y. Employees &ldquo;water&rdquo; a shared virtual{" "}
-          <strong>monstera deliciosa</strong> when they come into the Fondia
-          Stockholm office — when the team is in, the plant thrives.
-        </p>
-        <p>
-          The metaphor (<em>&ldquo;Växthuset&rdquo;</em> means &ldquo;The
-          Greenhouse&rdquo; in Swedish) replaces messy free-text Teams replies
-          with a calendar view that creates a positive magnet effect — you see
-          who&apos;s coming Tuesday, you decide to come too. No leaderboards.
-          No shaming. Built end-to-end: data collection with Power Automate
-          and Adaptive Cards, dashboard in Next.js.
+          <em>Currently paused</em> — the team dispersed for summer. Picking
+          it back up when everyone&apos;s back.
         </p>
       </>
     ),
   },
   {
-    meta: "03 / Personal tool",
-    name: "Folio",
-    role: "AI invoice management · 2026 — present",
-    stack: ["Next.js 15", "Supabase", "Gmail API", "Claude API", "TypeScript"],
-    href: "https://folio-9hfaxu7in-tilapits-projects.vercel.app",
+    meta: "03 / Applied AI at Fondia",
+    name: "Applied AI at Fondia",
+    role: "Summer internship · Stockholm, 2026",
+    stack: ["Power Automate", "Microsoft 365", "AI tooling"],
     body: (
       <>
         <p>
-          A personal AI-powered dashboard built for my role as{" "}
-          <strong>VES treasurer</strong>. Folio reads invoices straight from
-          Gmail, recognises line items with Claude, and prepares reimbursements
-          in seconds instead of evenings.
+          Spent summer 2026 in Stockholm as Applied AI Trainee at Fondia,
+          working at the intersection of AI, automation, and legal
+          operations. Built internal Power Automate workflows to reduce
+          repetitive manual work, and designed a browser-based compliance
+          self-assessment tool for the Swedish market — from concept to
+          working prototype.
         </p>
         <p>
-          Development has progressed through Gmail integration and invoice
-          recognition phases, with{" "}
-          <em>expense reimbursement recognition</em> as the next step. Built
-          for one user — but clean enough that the next student treasurer can
-          pick it up without me.
+          Analysed supplier contracts and spending across major vendors by
+          combining contract management and accounting data, and presented
+          the findings to management. Also supported an e-signature
+          platform migration and trained colleagues on practical ways to
+          use AI in legal and administrative work.
+        </p>
+      </>
+    ),
+  },
+  {
+    meta: "04 / Heltti",
+    name: "Heltti / Mindy",
+    role: "Therapy service websites · 2026 — present",
+    stack: ["Next.js", "Vercel"],
+    body: (
+      <>
+        <p>
+          Rebuilding the websites behind Heltti&apos;s therapy services,
+          migrating away from Wix-style platforms to cut hosting and
+          maintenance costs. I own the technical build — the visual
+          rebrand is handled separately.
+        </p>
+        <p>
+          Next up: a therapist matching feature, leveraging what I learned
+          building <strong>Myötä</strong>. No public URL yet.
         </p>
       </>
     ),
@@ -99,8 +118,9 @@ export default function Work() {
           Things I&apos;ve <em>built</em> or am building.
         </h2>
         <p className="section-intro reveal d2">
-          Three projects, three different problems. What they share: end-to-end
-          ownership and a stubborn preference for shipping over presenting.
+          Four projects, four different problems. What they share:
+          end-to-end ownership, and a preference for shipping over
+          presenting.
         </p>
         <div className="work-list">
           {projects.map((p) => (
@@ -116,17 +136,30 @@ export default function Work() {
                     </span>
                   ))}
                 </div>
+                {p.image && (
+                  <div className="project-image">
+                    <Image
+                      src={p.image}
+                      alt={`${p.name} screenshot`}
+                      fill
+                      sizes="280px"
+                      className="project-image-img"
+                    />
+                  </div>
+                )}
               </div>
               <div className="project-right">
                 <div className="project-desc">{p.body}</div>
-                <a
-                  href={p.href ?? "#contact"}
-                  className="btn btn-primary project-button"
-                  target={p.href?.startsWith("http") ? "_blank" : undefined}
-                  rel={p.href?.startsWith("http") ? "noopener noreferrer" : undefined}
-                >
-                  {p.button ?? "View project ↗"}
-                </a>
+                {p.href && (
+                  <a
+                    href={p.href}
+                    className="btn btn-primary project-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {p.button ?? "View project ↗"}
+                  </a>
+                )}
               </div>
             </article>
           ))}

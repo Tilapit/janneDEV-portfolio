@@ -661,6 +661,21 @@ em.navy {
   border-radius: 999px;
 }
 
+.project-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-top: 18px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--rule-soft);
+}
+
+.project-image-img {
+  object-fit: cover;
+}
+
 .project-right {
   display: flex;
   flex-direction: column;
@@ -688,6 +703,61 @@ em.navy {
 .project-button {
   margin-top: 18px;
   align-self: flex-start;
+}
+
+/* ---------- Experiments ---------- */
+.experiments {
+  padding: 48px 0 96px;
+}
+
+.experiments-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.experiments-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experiment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.experiment-name {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.experiment-name a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+
+.experiment-name a:hover {
+  color: var(--navy);
+  text-decoration-color: var(--navy);
+}
+
+.experiment-desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
 }
 
 /* ---------- Path ---------- */

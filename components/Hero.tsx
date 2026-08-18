@@ -12,13 +12,13 @@ export default function Hero() {
             them.
           </h1>
           <p className="hero-lede reveal d2">
-            <strong>Janne Lappi</strong> — Business &amp; Economics student.
-            Currently <strong>Applied AI Trainee</strong>{" "}
-            at <strong>Fondia</strong>, where I build internal tools like{" "}
-            <strong>Växthuset</strong>. Also building <strong>Folio</strong>{" "}
-            and <strong>Myötä</strong>, and serving as <strong>Treasurer</strong>{" "}
-            at VES. Top-3 finalist at the Greenstep CFO Hackathon and the
-            Wärtsilä Challenge.
+            Business student at <strong>Aalto</strong>, studying Information
+            and Service Management with a minor in Computer Science.
+            I&apos;m also <strong>Head of Finance</strong> at{" "}
+            <strong>VES</strong>. Over the past year, most of my time has
+            gone into building software with AI — a mix of my own projects,
+            hackathons, and Applied AI work at <strong>Fondia</strong> in
+            Stockholm.
           </p>
           <div className="hero-ctas reveal d3">
             <a href="#work" className="btn btn-primary">
