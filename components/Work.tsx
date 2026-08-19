@@ -42,6 +42,8 @@ const projects: Project[] = [
     name: "Myötä",
     role: "Therapist matching · 2025 — currently paused",
     stack: ["Next.js", "Supabase", "Claude API", "TypeScript"],
+    href: "https://www.myota.app/fi",
+    button: "Visit site ↗",
     body: (
       <>
         <p>

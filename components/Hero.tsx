@@ -3,10 +3,8 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <span className="hero-coords">60°N · 24°E</span>
       <div className="container hero-grid">
         <div>
-          <div className="hero-meta reveal">Helsinki, Finland · Available for work</div>
           <h1 className="reveal d1">
             I build software, businesses, and the <em>bridges</em> between
             them.
