@@ -1,7 +1,7 @@
 const stats = [
   { num: "2×", label: "Hackathon finalist" },
   { num: "€60K+", label: "Budget under oversight" },
-  { num: "3", label: "Working languages" },
+  { num: "7.5M+", label: "Claude Code tokens" },
 ];
 
 export default function Stats() {
