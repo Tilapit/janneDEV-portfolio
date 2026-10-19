@@ -20,7 +20,7 @@ const ogImage = {
 export const metadata: Metadata = {
   title,
   description,
-  metadataBase: new URL("https://jannelappi.com"),
+  metadataBase: new URL("https://janne-dev-portfolio.vercel.app"),
   openGraph: {
     title,
     description,

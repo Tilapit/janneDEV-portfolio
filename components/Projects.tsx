@@ -48,20 +48,21 @@ export default function Projects() {
               <span className="project-status">{p.status}</span>
             </>
           );
-          return p.href ? (
-            <a
-              key={p.name}
-              href={p.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="row"
-              role="listitem"
-            >
-              {cells}
-            </a>
-          ) : (
-            <div key={p.name} className="row" role="listitem">
-              {cells}
+          // role="listitem" lives on a wrapper so links keep their link role.
+          return (
+            <div key={p.name} className="row-item" role="listitem">
+              {p.href ? (
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="row"
+                >
+                  {cells}
+                </a>
+              ) : (
+                <div className="row">{cells}</div>
+              )}
             </div>
           );
         })}

@@ -58,6 +58,8 @@ export default function Monolith() {
           sizes="100vw"
           quality={90}
           priority={i === 8}
+          loading={i === 8 ? undefined : "eager"}
+          fetchPriority={i === 8 ? "high" : "low"}
           style={{
             objectFit: "cover",
             objectPosition: "68% 50%",

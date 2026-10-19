@@ -193,6 +193,14 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+.row-item .row {
+  border-bottom: 0;
+}
+
+.row-item:last-child .row {
+  border-bottom: 1px solid var(--line);
+}
+
 .list:hover .row {
   opacity: .45;
 }
@@ -313,6 +321,13 @@ a {
   text-align: right;
   font-size: 15px;
   color: var(--text-3);
+}
+
+/* Below this width the status wraps onto its own line; keep it flush left. */
+@media (max-width: 699px) {
+  .project-status {
+    text-align: left;
+  }
 }
 
 /* ---------- Experience ---------- */
