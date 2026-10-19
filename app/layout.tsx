@@ -1,50 +1,43 @@
-import type { Metadata } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const schibsted = Schibsted_Grotesk({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-fraunces",
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
   weight: ["400", "500", "600"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-jetbrains-mono",
-  weight: ["400", "500"],
-});
+const title = "Janne Lappi";
+const description =
+  "Business student at Aalto. Head of Finance at VES. Builder at Mindy.";
+const ogImage = {
+  url: "/images/monolith/turn08.jpg",
+  width: 1440,
+  height: 810,
+};
 
 export const metadata: Metadata = {
-  title: "Janne Lappi — Business student & AI builder",
-  description:
-    "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
+  title,
+  description,
   metadataBase: new URL("https://jannelappi.com"),
   openGraph: {
-    title: "Janne Lappi — Business student & AI builder",
-    description:
-      "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
+    title,
+    description,
     type: "website",
     locale: "en_GB",
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Janne Lappi — Business student & AI builder",
-    description:
-      "Business student at Aalto Information and Service Management, Head of Finance at VES. Building products with AI — LinkdPhoto, Myötä, and more.",
+    title,
+    description,
+    images: [ogImage.url],
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0A0A0A",
 };
 
 export default function RootLayout({
@@ -53,11 +46,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en">
+      <body className={schibsted.className}>{children}</body>
     </html>
   );
 }

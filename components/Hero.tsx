@@ -1,48 +1,37 @@
-import Image from "next/image";
+import Monolith from "@/components/Monolith";
+
+const links = [
+  { label: "About", href: "#about" },
+  { label: "Hackathons", href: "#hackathons" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="container hero-grid">
-        <div>
-          <h1 className="reveal d1">
-            I build software, businesses, and the <em>bridges</em> between
-            them.
-          </h1>
-          <p className="hero-lede reveal d2">
-            Business student at <strong>Aalto</strong>, studying Information
-            and Service Management with a minor in Computer Science.
-            I&apos;m also <strong>Head of Finance</strong> at{" "}
-            <strong>VES</strong>. Over the past year, most of my time has
-            gone into building software with AI — a mix of my own projects,
-            hackathons, and Applied AI work at <strong>Fondia</strong> in
-            Stockholm.
-          </p>
-          <div className="hero-ctas reveal d3">
-            <a href="#work" className="btn btn-primary">
-              See selected work →
+      <Monolith />
+      <div className="hero-fade" aria-hidden="true" />
+      <header className="wrap hero-header">
+        <a href="#top" className="hero-home">
+          Janne Lappi
+        </a>
+        <nav aria-label="Sections" className="hero-nav">
+          {links.map((l) => (
+            <a key={l.href} href={l.href}>
+              {l.label}
             </a>
-            <a href="#contact" className="btn btn-secondary">
-              Get in touch
-            </a>
-          </div>
-        </div>
-        <div className="hero-portrait reveal d2">
-          <div className="hero-portrait-frame">
-            <Image
-              src="/images/janne-v2.jpg"
-              alt="Janne Lappi portrait"
-              fill
-              priority
-              sizes="(max-width: 960px) 360px, 440px"
-              className="hero-portrait-img"
-            />
-          </div>
-          <div className="hero-portrait-caption">
-            <span>JL · 2026</span>
-            <span>Portrait</span>
-          </div>
-        </div>
+          ))}
+        </nav>
+      </header>
+      <div className="wrap hero-name">
+        <h1>
+          Janne
+          <br />
+          Lappi
+        </h1>
+        <p>Business student at Aalto. Head of Finance at VES. Builder at Mindy.</p>
       </div>
     </section>
   );
