@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 type Card = {
-  place: string | null;
+  place: string;
   of?: number;
   date: string;
   event: string;
@@ -20,11 +20,11 @@ const cards: Card[] = [
     partner: "Hanken",
     project: "Zero to One.",
     description:
-      "Ranking money-laundering alerts with machine learning and a quantum feature map. With about one confirmed case it ranked alerts 9% better, and the result held on VTT's 50-qubit quantum computer. From 25 cases on, the classical model wins — we said so in the pitch.",
-    footer: "With Veikka Silvekoski, Saad and Onni. €400 prize.",
+      "Ranking money-laundering alerts with machine learning and a quantum feature map. With about one confirmed case it ranked alerts 9% better, and the result held on VTT's 50-qubit quantum computer. From 25 cases on, the classical model wins, and we said so in the pitch.",
+    footer: "€400 prize.",
   },
   {
-    place: null,
+    place: "24h",
     date: "2026",
     event: "Junction x Vaasa",
     partner: "VILPE",
@@ -33,7 +33,7 @@ const cards: Card[] = [
       "A service built on VILPE's moisture sensors for developers who carry ten years of defect liability. It takes a moisture issue from detection through automatic ventilation and repair to a documented close. Demo ran on 16 months of real sensor data.",
     footer: (
       <div className="card-footer-split">
-        <span>24 hours. React demo and video pitch.</span>
+        <span>React demo and video pitch.</span>
         <a
           href="https://vilpe-guardian-demo.vercel.app"
           target="_blank"
@@ -74,13 +74,10 @@ export default function Hackathons() {
         {cards.map((c) => (
           <article key={`${c.event}-${c.partner}`} className="card">
             <div className="card-top">
-              {c.place ? (
-                <span className="card-result">
-                  {c.place} <span className="muted">/ {c.of}</span>
-                </span>
-              ) : (
-                <span className="card-result muted">—</span>
-              )}
+              <span className="card-result">
+                {c.place}
+                {c.of && <span className="muted"> / {c.of}</span>}
+              </span>
               <span className="card-date">{c.date}</span>
             </div>
             <h3>

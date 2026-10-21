@@ -31,7 +31,9 @@ export default function Hero() {
           <br />
           Lappi
         </h1>
-        <p>Business student at Aalto. Head of Finance at VES. Builder at Mindy.</p>
+        <p>
+          Product Development at Mindy. Information and Service Management and Computer Science at Aalto. Head of Finance at VES.
+        </p>
       </div>
     </section>
   );

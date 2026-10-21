@@ -10,7 +10,7 @@ const schibsted = Schibsted_Grotesk({
 
 const title = "Janne Lappi";
 const description =
-  "Business student at Aalto. Head of Finance at VES. Builder at Mindy.";
+  "Product Development at Mindy. Information and Service Management and Computer Science at Aalto. Head of Finance at VES.";
 const ogImage = {
   url: "/images/monolith/turn08.jpg",
   width: 1440,

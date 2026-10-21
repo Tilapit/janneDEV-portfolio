@@ -186,7 +186,6 @@ a {
   gap: 4px 24px;
   padding: 22px 0;
   border-top: 1px solid var(--line);
-  transition: opacity .2s;
 }
 
 .row:last-child {
@@ -199,14 +198,6 @@ a {
 
 .row-item:last-child .row {
   border-bottom: 1px solid var(--line);
-}
-
-.list:hover .row {
-  opacity: .45;
-}
-
-.list .row:hover {
-  opacity: 1;
 }
 
 /* ---------- About ---------- */

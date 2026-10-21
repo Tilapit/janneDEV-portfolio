@@ -5,20 +5,19 @@ export default function About() {
     <Section id="about" label="About" className="section-about">
       <div className="about">
         <p className="about-lead">
-          I study Information and Service Management at Aalto — how businesses
-          put data and digital technology to use. The technology part, I mostly
-          learn by building.
+          I build web products and AI tools, and study Information and Service
+          Management with a minor in Computer Science at Aalto.
         </p>
         <p>
-          It started at Junction x Vaasa in 2025. None of us had much of a
-          coding background, we finished second, and I haven&apos;t stopped
-          building since — mostly with Claude Code and Codex.
+          My first hackathon was Junction x Vaasa in 2025, where our team
+          placed second. Since then I&apos;ve kept building: websites, internal
+          tools and hackathon prototypes, mostly with Claude Code and Codex.
         </p>
         <p>
-          My background is on the business side. I run the finances of VES,
-          spent last summer on applied AI at Fondia in Stockholm, and before
-          that ran an online vintage store through high school. Now I&apos;m at
-          Mindy, building the new mindy.fi.
+          I started on the business side and still run the finances of VES.
+          Over the past year my focus has shifted to the technical side: a
+          Computer Science minor, applied AI work at Fondia in Stockholm, and
+          now the new mindy.fi.
         </p>
       </div>
     </Section>
