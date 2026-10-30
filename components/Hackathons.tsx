@@ -9,7 +9,6 @@ type Card = {
   project?: string;
   description: string;
   footer: React.ReactNode;
-  featured?: boolean;
 };
 
 const cards: Card[] = [
@@ -34,7 +33,6 @@ const cards: Card[] = [
         </a>
       </div>
     ),
-    featured: true,
   },
   {
     place: "5th",
@@ -46,28 +44,6 @@ const cards: Card[] = [
     description:
       "Ranking money-laundering alerts with machine learning and a quantum feature map. With about one confirmed case it ranked alerts 9% better, and the result held on VTT's 50-qubit quantum computer. From 25 cases on, the classical model wins, and we said so in the pitch.",
     footer: "€400 prize.",
-  },
-  {
-    place: "24h",
-    date: "2026",
-    event: "Junction x Vaasa",
-    partner: "VILPE",
-    project: "VILPE Guardian.",
-    description:
-      "A service built on VILPE's moisture sensors for developers who carry ten years of defect liability. It takes a moisture issue from detection through automatic ventilation and repair to a documented close. Demo ran on 16 months of real sensor data.",
-    footer: (
-      <div className="card-footer-split">
-        <span>React demo and video pitch.</span>
-        <a
-          href="https://vilpe-guardian-demo.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ul"
-        >
-          Open the demo ↗
-        </a>
-      </div>
-    ),
   },
   {
     place: "3rd",
@@ -96,10 +72,7 @@ export default function Hackathons() {
     <Section id="hackathons" label="Hackathons">
       <div className="cards">
         {cards.map((c) => (
-          <article
-            key={`${c.event}-${c.partner}`}
-            className={c.featured ? "card card-featured" : "card"}
-          >
+          <article key={`${c.event}-${c.partner}`} className="card">
             <div className="card-top">
               <span className="card-result">
                 {c.place}

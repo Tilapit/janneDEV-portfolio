@@ -242,11 +242,6 @@ a {
   transition: border-color .3s;
 }
 
-/* Featured result takes a full row; the rest keep two per row. */
-.card-featured {
-  flex-basis: 100%;
-}
-
 .card:hover {
   border-color: var(--line-hover);
 }
