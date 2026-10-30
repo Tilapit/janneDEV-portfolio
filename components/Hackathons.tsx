@@ -9,9 +9,33 @@ type Card = {
   project?: string;
   description: string;
   footer: React.ReactNode;
+  featured?: boolean;
 };
 
 const cards: Card[] = [
+  {
+    place: "1st",
+    date: "Oct 2026",
+    event: "Aaltoes Prompt Operations",
+    partner: "Velho",
+    project: "Velho Network.",
+    description:
+      "A tool that finds warm intro paths in a team's own LinkedIn network, ranks who to contact this week and suggests which teammate should send the message. The team uses it from their own Claude through an MCP server. Built end to end with Claude Code in about 48 hours.",
+    footer: (
+      <div className="card-footer-split">
+        <span>€1,000 prize.</span>
+        <a
+          href="https://github.com/Tilapit/warm-paths"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ul"
+        >
+          Open source version ↗
+        </a>
+      </div>
+    ),
+    featured: true,
+  },
   {
     place: "5th",
     of: 26,
@@ -72,7 +96,10 @@ export default function Hackathons() {
     <Section id="hackathons" label="Hackathons">
       <div className="cards">
         {cards.map((c) => (
-          <article key={`${c.event}-${c.partner}`} className="card">
+          <article
+            key={`${c.event}-${c.partner}`}
+            className={c.featured ? "card card-featured" : "card"}
+          >
             <div className="card-top">
               <span className="card-result">
                 {c.place}

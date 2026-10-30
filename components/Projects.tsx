@@ -8,6 +8,13 @@ const projects = [
     status: "In progress",
   },
   {
+    name: "Warm Paths",
+    description:
+      "Ranks your own LinkedIn network for a goal you describe to Claude: clients, investors or a job. Open-source version of the Velho Network hackathon project.",
+    status: "Open source",
+    href: "https://github.com/Tilapit/warm-paths",
+  },
+  {
     name: "Myötä",
     description:
       "Therapist matching through a guided quiz. Built with a VES team, 10 therapists onboarded.",
